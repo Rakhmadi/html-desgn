@@ -237,7 +237,7 @@ h3{
    outline: none !important;
 }
 .about_{
-    background-image: url('../banner-94\ \(1\).jpg');
+    background-image: url('../image/Asset_banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -367,8 +367,16 @@ input[type=text]:hover{
     padding-top: 0px;
 }
 footer{
+    background-color: #fff;
+}
+.footer{
     padding-left: 80px;
     padding-right: 80px;
     overflow: hidden;
     background-color: #fff;
+}
+.__footer_C{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
 }
