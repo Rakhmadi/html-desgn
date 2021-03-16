@@ -380,3 +380,9 @@ footer{
     padding: 10px;
     font-size: 14px;
 }
+.clear_lst{
+    list-style-type: none;
+}
+.list_footer{
+    
+}
