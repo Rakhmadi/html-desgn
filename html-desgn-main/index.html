@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEM Politeknik LP3I jakarta</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/remixicon.css">
+
+    <link href="./vendor/aos/aos.css" rel="stylesheet">
 </head>
 <body onload="q()">
-    <nav class="menu">
-        <img width="40px" style="float: left;margin-top: 10px;" src="./10104.png" alt="" srcset="">
+    <nav class="menus">
         <ul class="ul_">
             <li class="menu-list"><a class="menu-link" href="#">Home</a></li>
             <li class="menu-list"><a class="menu-link" href="#v">Visi & Misi</a></li>
@@ -18,9 +20,18 @@
             <li class="menu-list"><a class="menu-link" href="#kontaks">Contact  Us</a></li>
         </ul>
     </nav>
+    <div class="menu__mobile">
+      <li class="menu-list"><a class="menu-link" href="#">Home</a></li>
+      <li class="menu-list"><a class="menu-link" href="#v">Visi & Misi</a></li>
+      <li class="menu-list"><a class="menu-link" href="#news">News</a></li>
+      <li class="menu-list"><a class="menu-link" href="#about">About</a>
+      <li class="menu-list"><a class="menu-link" href="#kontaks">Contact  Us</a>
+    </div>
+    <div class="menu__toggler"><span></span></div>
+
     <section class="jum">
-        <div class="ab" >
-            <h1 class="d-margin-btn">Badan Esekutif Mahasiswa</h1>
+        <div class="ab " data-aos="fade-right" data-aos-duration="2000">
+            <h1 class="d-margin-btn">Badan Eksekutif Mahasiswa</h1>
             <h2 class="d-margin-btn d-margin-btn_">Politeknik LP3I Jakarta</h2>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             <br>
@@ -30,36 +41,36 @@
     <section style="position:relative;">
     <section class="f" id="v">
         <center><h2 class="color-white visi_misi">Visi & Misi</h2></center>
-        <div class="x">
+        <div class="x" data-aos="fade-left" data-aos-duration="2000">
             <h3 class="color-white ">Lorem Ipsum</h3>
             <p class="color-white align-j">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorum rerum quisquam sunt illum repellendus obcaecati dolores eum quis quod enim, nemo alias iste! Reprehenderit perferendis odio recusandae quod quisquam?
             </p>
         </div>
-        <div class="x">
+        <div class="x" data-aos="fade-right" data-aos-duration="2000">
             <h3 class="color-white">Lorem Ipsum</h3>
             <p class="color-white align-j">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorum rerum quisquam sunt illum repellendus obcaecati dolores eum quis quod enim, nemo alias iste! Reprehenderit perferendis odio recusandae quod quisquam?
             </p>
         </div>
-        <div class="x">
+        <div class="x" data-aos="fade-left" data-aos-duration="2000">
             <h3 class="color-white">Lorem Ipsum</h3>
             <p class="color-white align-j">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorum rerum quisquam sunt illum repellendus obcaecati dolores eum quis quod enim, nemo alias iste! Reprehenderit perferendis odio recusandae quod quisquam?
             </p>
         </div>
-        <div class="x">
+        <div class="x" data-aos="fade-right" data-aos-duration="2000">
             <h3 class="color-white">Lorem Ipsum</h3>
             <p class="color-white align-j">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorum rerum quisquam sunt illum repellendus obcaecati dolores eum quis quod enim, nemo alias iste! Reprehenderit perferendis odio recusandae quod quisquam?
             </p>
         </div>
     </section>
-    <section class="news" id="news" >
+    <section class="news" id="news">
         <center><div class="brder_"></div></center>
         <div class="row_kartu">
-            <center><h2>News</h2></center>
-            <div class="_colm_kartu ">
+            <center><h2>Berita Terkini</h2></center>
+            <div class="_colm_kartu " data-aos-delay="500" class="item" data-aos="fade-left">
                 <div class="_kartu shadow">
                     <img src="./x.jpeg" class="_gmbr_kartu"  alt="">
                     <div class="_kontent_kartu">
@@ -69,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="_colm_kartu ">
+            <div class="_colm_kartu " data-aos-delay="800" class="item" data-aos="fade-left">
                 <div class="_kartu shadow">
                     <img src="./x.jpeg" class="_gmbr_kartu"  alt="">
                     <div class="_kontent_kartu">
@@ -79,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="_colm_kartu ">
+            <div class="_colm_kartu " data-aos-delay="1100" class="item" data-aos="fade-left">
                 <div class="_kartu shadow">
                     <img src="./x.jpeg" class="_gmbr_kartu" alt="">
                     <div class="_kontent_kartu">
@@ -94,17 +105,22 @@
     </section>
     <section class="about_" id="about">
         <div class="faded_div">
-            <div class="_kartu faded_div____ shadow">
+            <div class="_kartu faded_div____ shadow" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"  data-aos-duration="1500" data-aos-offset="0">
                 <center><div class="brder_"></div></center>
-                <center><h2>About</h2></center>
-                <p>About disini</p>
+                <center><h2>Tentang Kami</h2></center>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
     </section>
     <section class="__contact" id="kontaks">
         <center><div class="brder_ bg_force zx"></div></center>
-        <center><h2 class="color-white">Contact Us</h2></center>
-        <div class="nn">
+        <center><h2 class="color-white">Kontak Kami</h2></center>
+        <div class="nn" data-aos="fade-up" data-aos-duration="800">
             <form action="">
                 <div class="clm_3 ">
                     <div class="ggf">
@@ -139,25 +155,79 @@
     </section>
     <footer>
         <div class="footer">
-            <div class="clm_2">
-                <ul class="clear_lst">
-                    <li>asadasd</li>
-                    <li>asadasd</li>
-                    <li>asadasd</li>
-                    <li>asadasd</li>
-                    <li>asadasd</li>
+          <div class="inner-footer">
+
+            <div class="footer-items">
+              <h1>Badan Eksekutif Mahasiswa</h1>
+              <p>Description of any product or motto of the company.</p>
+            </div>
+
+            <div class="footer-items" >
+              <h3>Quick Links</h3>
+              <div class="border1"></div>
+                <ul class="ul_footer">
+                  <a class="link_footer" href="#"><li>Home</li></a>
+                  <a class="link_footer" href="#"><li>Visi & Misi</li></a>
+                  <a class="link_footer" href="#"><li>News</li></a>
+                  <a class="link_footer" href="#"><li>Contact Us</li></a>
                 </ul>
-              </div>
-              <div class="clm_2">
-                Footer 2
-              </div>
+            </div>
+
+            <div class="footer-items">
+              <h3>Recipes</h3>
+              <div class="border1"></div>
+                <ul class="ul_footer">
+                  <a class="link_footer" href="#"><li>Indian</li></a>
+                  <a class="link_footer" href="#"><li>Chinese</li></a>
+                  <a class="link_footer" href="#"><li>Mexican</li></a>
+                  <a class="link_footer" href="#"><li>Italian</li></a>
+                </ul>
+            </div>
+
+            <div class="footer-items">
+              <h3>Contact us</h3>
+              <div class="border1"></div>
+                <ul class="ul_footer">
+                  <li>Jakut, Pelumpang</li>
+                  <li>(021) 43909166</li>
+                  <li>lp3i_jakartautara@yahoo.com</li>
+                </ul> 
+              
+                <div class="social-media">
+                  <a class="link_footer" href="#">
+                      <img class="remix" src="./Remix_icon/ig.svg" alt="" srcset="">
+                  </a>
+                  <a class="link_footer" href="#">
+                    <img class="remix" src="./Remix_icon/fb.svg" alt="" srcset="">
+                </a>
+                  <a class="link_footer" href="#">
+                      <img class="remix" src="./Remix_icon/line.svg" alt="">
+                  </a>
+                </div> 
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            Coded & Designed by Team Desain Web 2021 with &#9829;
+          </div>
         </div>
-      <div class="__footer_C">
-          <center>Copyright &copy; 2021 Team</center>
-      </div>
     </footer>
+    <script src="./vendor/aos/aos.js"></script>
     <script>
+        AOS.init();
+        const toggler = document.querySelector('.menu__toggler');
+        const menu    = document.querySelector('.menu__mobile');
         var navbar = document.querySelector('nav');
+
+        toggler.addEventListener('click', () => {
+          toggler.classList.toggle('active');
+          menu.classList.toggle('active');
+        })
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            toggler.classList.toggle('active');
+        })
+
         let scrll = () => {
                if (window.pageYOffset > 100) {
                   navbar.classList.add('pengubahscrl')
@@ -167,7 +237,7 @@
             }
         window.onscroll = scrll
         function q() {
-            document.body.style.zoom = "105%" 
+            document.body.style.zoom = "100%" 
         }
     </script>
 </body>
